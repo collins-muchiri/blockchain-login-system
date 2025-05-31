@@ -1,63 +1,135 @@
 # Blockchain Login System
 
-A secure, decentralized authentication system that uses blockchain wallets for user authentication.
+A secure, decentralized authentication system that uses blockchain wallets for user authentication. This system provides a modern, secure, and user-friendly way to authenticate users using their blockchain wallets.
 
 ## Features
 
-- Wallet-based authentication using MetaMask
-- Passwordless login through cryptographic signatures
-- Secure session management
-- Modern, responsive UI with Chakra UI
-- Cross-chain compatibility
-
-## Prerequisites
-
-- Node.js (v14 or higher)
-- MetaMask or any Web3 wallet
-- npm or yarn package manager
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd blockchain-login-system
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and navigate to `http://localhost:3000`
-
-## Usage
-
-1. Click "Connect Wallet" to connect your MetaMask wallet
-2. Approve the connection request in MetaMask
-3. Sign the authentication message
-4. You will be redirected to the dashboard upon successful authentication
-
-## Security Features
-
-- Message signing for authentication
-- JWT-based session management
-- Protected routes
-- Secure wallet connection handling
+- 🔐 Wallet-based authentication using MetaMask
+- 🔑 Passwordless login through cryptographic signatures
+- 🔄 Cross-chain compatibility
+- 🛡️ Role-based access control
+- 📱 Modern, responsive UI with Chakra UI
+- 🔍 On-chain user management
+- 📊 Login tracking and analytics
+- 🚀 Easy integration with existing applications
 
 ## Tech Stack
 
+### Frontend
 - React
 - Vite
 - Chakra UI
 - Web3-React
 - Ethers.js
 - React Router
+
+### Backend
+- Node.js
+- Express
+- JWT Authentication
+- Winston Logger
+
+### Smart Contracts
+- Solidity
+- OpenZeppelin
+- Hardhat
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+- MetaMask or any Web3 wallet
+- npm or yarn package manager
+- Git
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/bucky-ops/blockchain-login-system.git
+cd blockchain-login-system
+```
+
+2. Install frontend dependencies:
+```bash
+npm install
+```
+
+3. Install backend dependencies:
+```bash
+cd backend
+npm install
+```
+
+4. Install smart contract dependencies:
+```bash
+cd ../contracts
+npm install
+```
+
+5. Create environment files:
+
+Frontend (.env):
+```env
+VITE_CONTRACT_ADDRESS=your_contract_address_here
+VITE_BACKEND_URL=http://localhost:5000
+```
+
+Backend (.env):
+```env
+PORT=5000
+NODE_ENV=development
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+FRONTEND_URL=http://localhost:3000
+LOG_LEVEL=info
+```
+
+Contracts (.env):
+```env
+PRIVATE_KEY=your_wallet_private_key
+GOERLI_RPC_URL=your_goerli_rpc_url
+ETHERSCAN_API_KEY=your_etherscan_api_key
+```
+
+## Running the Application
+
+1. Start the backend server:
+```bash
+cd backend
+npm run dev
+```
+
+2. In a new terminal, start the frontend:
+```bash
+# In the root directory
+npm run dev
+```
+
+3. Deploy the smart contract (optional for development):
+```bash
+cd contracts
+npm run deploy:local
+```
+
+The application will be available at:
+- Frontend: http://localhost:3000
+- Backend: http://localhost:5000
+
+## Usage
+
+1. Connect your MetaMask wallet
+2. Sign the authentication message
+3. Access the dashboard
+4. Manage your profile and permissions
+
+## Security Features
+
+- Message signing for authentication
+- JWT-based session management
+- Protected routes
+- Rate limiting
+- Secure wallet connection handling
+- Role-based access control
+- Emergency pause functionality
 
 ## Contributing
 
@@ -69,4 +141,14 @@ npm run dev
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For support, please open an issue in the GitHub repository or contact the maintainers.
+
+## Acknowledgments
+
+- OpenZeppelin for secure smart contract libraries
+- MetaMask for wallet integration
+- The Ethereum community for their excellent documentation 
