@@ -1,5 +1,11 @@
 # Blockchain Login System
 
+*Secure authentication solution leveraging blockchain-based identity verification; JavaScript.*
+
+![category](https://img.shields.io/badge/category-web3-EF4444?style=flat-square) ![language](https://img.shields.io/badge/language-JavaScript-2563EB?style=flat-square) ![license](https://img.shields.io/badge/license-MIT-16A34A?style=flat-square) ![maintenance](https://img.shields.io/badge/maintenance-dormant-D97706?style=flat-square) ![repo](https://img.shields.io/badge/repo-blockchain--login--system-111827?style=flat-square)
+
+---
+
 A secure, decentralized authentication system that uses blockchain wallets for user authentication. This system provides a modern, secure, and user-friendly way to authenticate users using their blockchain wallets.
 
 ## Features
@@ -45,7 +51,7 @@ A secure, decentralized authentication system that uses blockchain wallets for u
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/bucky-ops/blockchain-login-system.git
+git clone https://github.com/collins-muchiri/blockchain-login-system.git
 cd blockchain-login-system
 ```
 
